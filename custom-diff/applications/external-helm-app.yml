@@ -23,11 +23,6 @@ spec:
       - CreateNamespace=true  
    
   ignoreDifferences:
-    - group: ""
-      kind: Secret
-      jsonPointers:
-       - /data
-  ignoreDifferences:
     - group: apps
     kind: Deployment
     name: simple-deployment
