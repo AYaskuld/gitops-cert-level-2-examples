@@ -23,9 +23,9 @@ spec:
       - CreateNamespace=true  
    
   ignoreDifferences:
-    - group: apps
+  - group: apps
     kind: Deployment
     name: simple-deployment
     namespace: example02
     jsonPointers:
-    - /metadata/annotations/creation
+    - /metadata
