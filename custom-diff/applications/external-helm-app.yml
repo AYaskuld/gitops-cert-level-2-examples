@@ -27,3 +27,9 @@ spec:
       kind: Secret
       jsonPointers:
        - /data
+    - group: apps
+    kind: Deployment
+    name: simple-deployment
+    namespace: example02
+    jsonPointers:
+    - /metadata/annotations/creation
