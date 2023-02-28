@@ -22,16 +22,15 @@ spec:
     syncOptions:
       - CreateNamespace=true  
    
-  ignoreDifferences:
-  - group: apps
-    kind: Deployment
-    name: simple-deployment
-    namespace: example02
-    jsonPointers:
-    - /metadata
     
   ignoreDifferences:
     - group: ""
       kind: Secret
       jsonPointers:
        - /data
+       
+    - group: apps
+      kind: Deployment
+      namespace: example02
+      jsonPointers:
+      - /metadata     
