@@ -29,6 +29,8 @@ spec:
     namespace: example02
     jsonPointers:
     - /metadata
+    
+  ignoreDifferences:
   - group: ""
     kind: Secret
     jsonPointers:
