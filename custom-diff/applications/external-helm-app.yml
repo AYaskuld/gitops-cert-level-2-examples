@@ -27,6 +27,7 @@ spec:
       kind: Secret
       jsonPointers:
        - /data
+  ignoreDifferences:
     - group: apps
     kind: Deployment
     name: simple-deployment
