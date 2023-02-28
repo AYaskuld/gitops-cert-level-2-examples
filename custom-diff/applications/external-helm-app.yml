@@ -31,7 +31,7 @@ spec:
     - /metadata
     
   ignoreDifferences:
-  - group: ""
-    kind: Secret
-    jsonPointers:
-    - /data
+    - group: ""
+      kind: Secret
+      jsonPointers:
+       - /data
